@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container And Spacing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Margin</h3>
+      <p class="m-4 bg-yellow-100">This Is Margin</p>
+      <p class="mx-4 bg-yellow-200">This Is X Margin</p>
+      <p class="my-4 bg-yellow-300">This Is Y Margin</p>
+      <p class="mt-5 bg-yellow-400">This Is Top Margin</p>
+      <p class="mr-2 bg-yellow-200">This Is Right Margin</p>
+      <p class="ml-4 bg-yellow-200">This Is Left Margin</p>
+      <p class="mb-8 bg-yellow-200">This Is bottom Margin</p>
+
+      <h3>Margin All Around</h3>
+      <p class="m-[5rem] bg-slate-300">This Is all around Margin</p>
+      <h3>Padding</h3>
+      <div class="p-4 bg-lime-200">Padding All Around</div>
+      <div class="px-4 bg-lime-300">Padding All X Around</div>
+      <div class="py-4 bg-lime-400">Padding All Y Around</div>
+      <div class="pt-4 bg-lime-500">Padding All Top Around</div>
+      <div class="pb-8 bg-lime-600">Padding All bottom Around</div>
+      <div class="pr-4 bg-lime-700">Padding All Right Around</div>
+      <div class="pl-8 bg-lime-800">Padding All Left Around</div>
+      <h2>Space Around X</h2>
+      <div class="flex space-x-8">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+      </div>
+      <h3>Space Around Y</h3>
+      <div class="flex-col space-y-2">
+        <div class="p-3 bg-teal-100">01</div>
+        <div class="p-3 bg-teal-200">02</div>
+        <div class="p-3 bg-teal-300">03</div>
+      </div>
+    </div>
+  </body>
+</html>
