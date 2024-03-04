@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background And Shadow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: blueviolet;
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-red-600 p-4 text-white tracking-[10px] font-bold text-xl">
+      Background And Shadow
+    </h1>
+
+    <div class="container bg-teal-100 p-4 my-2">
+      Gradient
+      <div class="p-4 h-14 bg-gradient-to-r from-red-400 to-indigo-600">
+        This is Gradient
+      </div>
+      <div class="Shadows flex gap-4">
+        THsi is Shadow
+        <div class="size-10 shadow-sm bg-white p-10 my-10"></div>
+        <div class="size-10 shadow bg-white p-10 my-10"></div>
+        <div class="size-10 shadow-md bg-white p-10 my-10"></div>
+        <div class="size-10 shadow-lg bg-white p-10 my-10"></div>
+        <div class="size-10 shadow-xl bg-white p-10 my-10"></div>
+        <div class="size-10 shadow-2xl bg-white p-10 my-10"></div>
+        <div
+          class="size-10 shadow-[15px_15px_10px_rgba(0,0,0,0.7)] bg-white p-10 my-10"
+        ></div>
+        <div class="size-10 shadow-inner bg-white p-10 my-10"></div>
+        <div
+          class="size-10 shadow-lg shadow-red-500/60 bg-white p-10 my-10"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

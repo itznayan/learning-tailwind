@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position AND Display</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-red-500 p-4 text-xl text-white">Positoin</h1>
+    <div class="relative bg-yellow-300 m-10 size-auto">
+      This Is Position Container
+      <div class="static size-[5rem] bg-teal-300 text-black p-4 my-8">
+        <p>This is static</p>
+      </div>
+      <div class="fixed right-100 bg-teal-300 text-black p-4 size-[5rem]">
+        <p>this is fixed</p>
+      </div>
+
+      <div
+        class="absolute bottom-0 right-0 bg-teal-300 text-black p-4 size-[5rem]"
+      >
+        <p>this is absolute</p>
+      </div>
+      <div
+        class="relative left-80 bottom-10 bg-teal-300 text-black p-4 size-[5rem] my-8"
+      >
+        <p class="">this is relative</p>
+      </div>
+      <div class="sticky bg-teal-300 text-black p-4 size-[5rem] my-8">
+        <p>this is sticky</p>
+      </div>
+    </div>
+
+    <h1 class="bg-red-400 p-4 my-6 text-blue-900 font-bold text-xl">
+      Display Properties
+    </h1>
+    <div class="bg-indigo-400 p-10 mb-10 w-[600px]">
+      <span class="inline bg-orange-300 w-[200px] h-[400px]"
+        >This is inline and will wrap normally
+      </span>
+      <span class="inline-block ml-10 bg-red-200 w-[200px] h-[400px]">
+        This is Inline-BLock Not Extend beyound Its Parent
+      </span>
+      <span class="block bg-red-600">this will move to its own new line</span>
+      <span class="hidden">this will not show</span>
+    </div>
+  </body>
+</html>
