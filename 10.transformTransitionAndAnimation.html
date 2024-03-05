@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Transition and Animation</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="p-5 text-white text-xl bg-black rounded-lg hover:bg-blue-800 hover:text-black"
+    >
+      Click Me
+    </button>
+    <h1 class="p-4 bg-red-500 rounded w-[600px] my-6">
+      With Transition transition hover: bg-blue duration ease in out delay
+    </h1>
+    <button
+      class="p-5 text-white text-sm bg-black rounded-lg transition hover:bg-blue-700 duration-700 ease-in-out delay-100"
+    >
+      Transition
+    </button>
+
+    <h1 class="p-4 bg-red-500 rounded w-[600px] my-6">
+      Transform And Transition
+    </h1>
+
+    <button
+      class="p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-[1s] hover:-translate-y-1 hover:scale-150"
+    >
+      Transform
+    </button>
+
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover:-translate-y-1 hover:scale-150 hover:skew-x-12"
+    >
+      Skew X
+    </button>
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover:-translate-y-1 hover:scale-150 hover:skew-y-12"
+    >
+      Skew Y
+    </button>
+
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover:-translate-y-1 hover:scale-150"
+    >
+      Scale
+    </button>
+
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover:-translate-y-4"
+    >
+      Y Axies
+    </button>
+
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-800 hover:-translate-x-4"
+    >
+      X Axies
+    </button>
+    <button
+      class="m-5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover:rotate-45"
+    >
+      rotate-90
+    </button>
+
+    <h1 class="my-20 bg-red-500 p-4 rounded">This is 3x3 Cotainer</h1>
+    <div
+      class="w-[1020px] conatiner border-2 border-black grid grid-cols-8 gap-4 grid-rows-1"
+    >
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-center rotate-45"
+      >
+        Origin Center
+      </button>
+
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-top rotate-45"
+      >
+        Origin Top
+      </button>
+
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-bottom rotate-45"
+      >
+        Origin Bottom
+      </button>
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-left rotate-45"
+      >
+        Origin Left
+      </button>
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-top-right rotate-45"
+      >
+        Origin Top Right
+      </button>
+
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-top-left rotate-45"
+      >
+        Origin Top Left
+      </button>
+
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-bottom-left rotate-45"
+      >
+        Origin Bottom Left
+      </button>
+
+      <button
+        class="size-20 -5 p-5 text-sm bg-yellow-500 text-black rounded-lg transition ease-in-out delay-150 duration-1000 hover: origin-Bottom-right rotate-45"
+      >
+        Origin Bottom Right
+      </button>
+    </div>
+
+    <div
+      class="container-animation border-black text-white font-semibold text-xl tracking-[5px] bg-red-600 border-2 p-4 my-10"
+    >
+      Animation in tailwind
+    </div>
+
+    <div class="animation-container gap-20 flex p-4 my-10 bg-teal-300">
+      <h1 class="p-4">Spin</h1>
+      <div
+        class="animate-spin bg-red-400 size-20 border-r-8 border-red-800 text-black p-10 rounded-full"
+      >
+        Hi
+      </div>
+      <h1>ping</h1>
+      <div
+        class="animate-ping bg-red-400 size-20 border-r-8 border-red-800 text-black p-10 rounded-full"
+      >
+        Hi
+      </div>
+
+      <h1>Pulse</h1>
+      <div
+        class="animate-pulse bg-red-400 size-20 border-r-8 border-red-800 text-black p-10 rounded-full"
+      >
+        Hi
+      </div>
+      <h1>Bounce</h1>
+      <div
+        class="animate-bounce bg-red-400 size-20 border-r-8 border-red-800 text-black p-10 rounded-full"
+      >
+        Hi
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-white bg-red-600 p-4 my-4 text-2xl">This is Flex</h1>
+    <div class="container m-2 p-4 border-2 border-pink-300">
+      <ul class="flex flex-col">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+    </div>
+    <div class="container m-2 p-4 border-2 border-pink-300">
+      <h1 class="">This is Simple Flex box</h1>
+      <ul class="flex">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <h1 class="text-xl text-white bg-red-500 my-8 p-4">
+        This is Justify Content Properties
+      </h1>
+      <h1>Justify Flex Start</h1>
+      <ul class="flex justify-start bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <hr />
+      <h1>Justify Flex End</h1>
+      <ul class="flex justify-end bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <hr />
+      <h1>Justify Center</h1>
+      <ul class="flex justify-center bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <hr />
+      <h1>Justify Space Between</h1>
+      <ul class="flex justify-between bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <hr />
+      <h1>Justify Space Around</h1>
+      <ul class="flex justify-around bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <h1>Justify Evenly</h1>
+      <ul class="flex justify-evenly bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+      <h1>Justify Skretch</h1>
+      <ul class="flex justify-stretch bg-yellow-200">
+        <li class="bg-indigo-300 p-4 m-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+    </div>
+
+    <div
+      class="bg-red-500 text-white text-[24px] border-2 border-black m-2 p-4 font-semibold tracking-[10px] rounded-xl"
+    >
+      This is Order Properties
+    </div>
+    <div class="container m-2 p-4 border-2">
+      This is Order Properties
+      <ul class="flex justify-start my-4 bg-yellow-300">
+        <li class="bg-indigo-300 p-4 m-4 order-4">01</li>
+        <li class="bg-indigo-300 p-4 m-4 order-3">02</li>
+        <li class="bg-indigo-300 p-4 m-4">03</li>
+        <li class="bg-indigo-300 p-4 m-4">04</li>
+        <li class="bg-indigo-300 p-4 m-4">05</li>
+      </ul>
+    </div>
+
+    <div
+      class="text-xl bg-red-600 rounded-lg text-white p-4 font-semibold tracking-widest"
+    >
+      This is Grow And Shrink
+    </div>
+    <div class="container m-2 p-4 border-4">
+      Grow Shrink
+      <ul class="flex w-100">
+        <li class="m-10 p-4 bg-teal-300 flex-initial">Initial</li>
+        <li class="m-10 p-4 bg-teal-300 flex-0">Flex 0</li>
+        <li class="m-10 p-4 bg-teal-300 flex-1">Flex 1</li>
+        <li class="m-10 p-4 bg-teal-300 flex auto">Auto</li>
+        <li class="m-10 p-4 bg-teal-300">Not Any</li>
+      </ul>
+    </div>
+  </body>
+</html>

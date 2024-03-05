@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      class="text-2xl bg-red-500 text-white font-semibold tracking-[.5rem] rounded border p-4"
+    >
+      This is Grid
+    </h1>
+    <div
+      class="container mx-2 border-4 my-10 p-10 gap-4 grid grid-cols-6 grid-rows-3"
+    >
+      <div class="bg-indigo-400 p-4 col-span-3 row-span-2">
+        01 This is col span 3 And Row span 2
+      </div>
+      <div class="bg-indigo-400 p-4">02</div>
+      <div class="bg-indigo-400 p-4">03</div>
+      <div class="bg-indigo-400 p-4">04</div>
+      <div class="bg-indigo-400 p-4">05</div>
+      <div class="bg-indigo-400 p-4">06</div>
+      <div class="bg-indigo-400 p-4">07</div>
+      <div class="bg-indigo-400 p-4">08</div>
+      <div class="bg-indigo-400 p-4">09</div>
+      <div class="bg-indigo-400 p-4">10</div>
+    </div>
+  </body>
+</html>
